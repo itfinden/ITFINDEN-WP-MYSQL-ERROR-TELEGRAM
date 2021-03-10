@@ -2,21 +2,23 @@
 
 
 
-## Overview
+## RESUMEN
 
-One of the most common problems facing a WordPress webmaster is the occasional drop in database connectivity. Left to its own devices, WordPress simply displays to the end user the message
+Uno de los problemas más comunes a los que se enfrenta un webmaster de WordPress es la caída ocasional de la conectividad de la base de datos. Dejado a su suerte, WordPress simplemente muestra al usuario final el mensaje
 
 ![Error establishing a database connection](img/error.png)
 
-The webmaster has no way of knowing that an error has occurred.
+El webmaster no tiene forma de saber que se ha producido un error.
 
-WordPress allows us to address this problem in the following way: if it cannot connect to its database, it will run the drop-in plugin `/wp-content/db-error.php` ([documentation](https://developer.wordpress.org/reference/functions/dead_db/)) if it exists. Smart WP db-error.php uses that built-in functionality to serve a 503 page informing users of the outage, while e-mailing webmasters to alert them to the problem -- but only at specified intervals (default: 5 minutes), so as not to overwhelm their mail servers and inboxes.
+WordPress nos permite abordar este problema de la siguiente manera: si no puede conectarse a su base de datos, ejecutará el plugin drop-in `/wp-content/db-error.php` ([documentation](https://developer.wordpress.org/reference/functions/dead_db/)) si existe. Smart WP db-error.php utiliza esa funcionalidad incorporada para servir una página 503 informando a los usuarios de la interrupción, al tiempo que envía un correo electrónico a los webmasters para alertarles del problema - pero sólo a intervalos especificados (por defecto: 5 minutos), para no saturar sus servidores de correo y sus buzones.
+
+Traducción realizada con la versión gratuita del traductor www.DeepL.com/Translator
 
 ![Smart WP db-error.php Error Messager](img/example.png)
 
-## Installation
+## Instalacion
 
-To install Smart WP db-error.php, execute the following:
+Para instalar ITFINDEN WP db-error.php, ejecute lo siguiente:
 
 ```sh
 cd /path/to/wp-content
