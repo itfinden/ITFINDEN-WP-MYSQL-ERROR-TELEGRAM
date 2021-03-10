@@ -1,13 +1,4 @@
 <?php
-/**
- * Smart WP db-error.php
- *
- * @package Smart_WP_db_error_php
- * @version 1.0.6
- *
- * @copyright 2017-2018 Alexandros Kozak
- * @license GPLv2 (or later)
- */
 
 // Die silently if smart-wp-db-error.php has been accessed directly.
 if ( ! defined( 'MAIL_FROM' )
