@@ -1,6 +1,6 @@
 <?php
 
-// Die silently if smart-wp-db-error.php has been accessed directly.
+// Die silently if itfinden-wp-db-error.php has been accessed directly.
 if ( ! defined( 'MAIL_FROM' )
 	|| ! defined( 'MAIL_TO' )
 	|| ! defined( 'ALERT_INTERVAL' ) ) {
@@ -18,7 +18,7 @@ header( $server_protocol . ' 503 Service Temporarily Unavailable' );
 header( 'Status: 503 Service Temporarily Unavailable' );
 header( 'Retry-After: 600' );
 $touched = false;
-$lock    = __DIR__ . DIRECTORY_SEPARATOR . 'smart-wp-db-error.lock';
+$lock    = __DIR__ . DIRECTORY_SEPARATOR . 'itfinden-wp-db-error.lock';
 // When db-error.php is accessed directly, only show the message; do not e-mail.
 if ( defined( 'ABSPATH' ) ) {
 
@@ -129,12 +129,10 @@ if ( defined( 'ABSPATH' ) ) {
 			</div>
 			<?php if ( true !== SUPPRESS_CREDITS ) : ?>
 			<div id="credits">
-				<small><a href="https://github.com/agkozak/smart-wp-db-error">Smart WP db-error.php</a></small>
+				<small><a href="https://www.itfinden.com">itfinden WP db-error.php</a></small>
 			</div>
 			<?php endif; ?>
 		</div>
 	</body>
 </html>
 <?php
-// @codingStandardsIgnoreLine
-// vim: ts=4:sts=4:sw=4:noet
