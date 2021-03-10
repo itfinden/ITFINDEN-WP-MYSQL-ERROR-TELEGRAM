@@ -69,8 +69,8 @@ if ( defined( 'ABSPATH' ) ) {
 		
 		// the Telegram Alert.
 		
-		$website="https://api.telegram.org/bot".$TELEGRAM_TOKEN;
-		$chatId=$TELEGRAM_CHAT;  //Receiver Chat Id 
+		$website="https://api.telegram.org/bot".TELEGRAM_TOKEN;
+		$chatId=TELEGRAM_CHAT;  //Receiver Chat Id 
 		$params=[
 		    'chat_id'=>$chatId,
 		    'text'=>$message,
