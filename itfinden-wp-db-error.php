@@ -95,7 +95,7 @@ if ( defined( 'ABSPATH' ) ) {
 	<title>Problemas Tecnicos</title>
 	<style>
 		body {
-			background-color: #5b474c;
+			background-color: #152559;
 			font-family: "Courier New", Courier, monospace;
 		}
 
@@ -133,11 +133,19 @@ if ( defined( 'ABSPATH' ) ) {
 		#credits a:hover {
 			color: #e399a7;
 		}
+		
+		.aligncenter {
+    			text-align: center;
+		}
 		</style>
 	</head>
 
 	<body>
 		<div id="wrapper">
+			<p class="aligncenter">
+    				<img src=<?php echo LOGO_EMPRESA;?> alt="centered image" />
+			</p>
+
 			<div id="error">
 				<h1>Ups.</h1>
 				<p>Disculpe las molestias.  Vuelva a comprobarlo más tarde.</p>
@@ -147,7 +155,7 @@ if ( defined( 'ABSPATH' ) ) {
 			</div>
 			<?php if ( true !== SUPPRESS_CREDITS ) : ?>
 			<div id="credits">
-				<small><a href="https://www.itfinden.com">itfinden WP db-error.php</a></small>
+				<small><a href="https://www.itfinden.com">itfinden Monitor</a></small>
 			</div>
 			<?php endif; ?>
 		</div>
