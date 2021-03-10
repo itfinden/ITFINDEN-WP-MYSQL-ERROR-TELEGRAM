@@ -6,7 +6,6 @@ define( 'ALERT_INTERVAL', 300 );        // In seconds.
 define( 'SUPPRESS_CREDITS', FALSE );
 define( 'TELEGRAM_TOKEN', 'TOKEN');
 define( 'TELEGRAM_CHAT','CHAT_ID');
-define( 'TELEGRAM_CHAT','CHAT_ID');
 define( 'LOGO','http://images.itfinden.com/core_itfinden_logo_180x180px.png');
 define( 'BACKGROUND_COLOR','#152559');
 define( 'TEXT1','UPS');
