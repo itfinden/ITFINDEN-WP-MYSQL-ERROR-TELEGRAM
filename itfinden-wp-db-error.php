@@ -61,16 +61,20 @@ if ( defined( 'ABSPATH' ) ) {
 		}
 
 		// The e-mail alert.
-		$message = 'Database Error on ' . $server_name . "\n" .
-			'The database error occurred when someone tried to open this page: '
+		$message = 'Database Error en ' . $server_name . "\n" .
+			'El error de la base de datos se produjo cuando alguien intentó abrir esta página: '
 			. $web_protocol . '://' . $server_name . $request_uri . "\n";
-		$subject = 'Database error at ' . $server_name;
+		$subject = 'Error de base de datos en ' . $server_name;
 		mail( MAIL_TO, $subject, $message, $headers );
 		
-		// the Telegram Alert.
+		$TELEGRAM_TOKEN = "1190504514:AAGkPiIRhwakqb-LW405n0s14sbwDkxiKjs";
+		$TELEGRAM_CHAT  = "-343741252";
 		
-		$website="https://api.telegram.org/bot".TELEGRAM_TOKEN;
-		$chatId=TELEGRAM_CHAT;  //Receiver Chat Id 
+		
+		// the Telegram Alert.
+		$website="https://api.telegram.org/bot".$TELEGRAM_TOKEN;
+		
+		$chatId=$TELEGRAM_CHAT;  //Receiver Chat Id 
 		$params=[
 		    'chat_id'=>$chatId,
 		    'text'=>$message,
