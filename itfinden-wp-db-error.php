@@ -147,8 +147,8 @@ if ( defined( 'ABSPATH' ) ) {
 			</p>
 
 			<div id="error">
-				<h1>Ups.</h1>
-				<p>Disculpe las molestias.  Vuelva a comprobarlo más tarde.</p>
+				<h1><?php echo TEXT1;?></h1>
+				<p><?php echo TEXT2;?></p>
 				<?php if ( true === $touched || ( file_exists( $lock ) && time() - filectime( $lock ) <= ALERT_INTERVAL ) ) : ?>
 				<p>Administrador alertado.</p>
 				<?php endif; ?>
