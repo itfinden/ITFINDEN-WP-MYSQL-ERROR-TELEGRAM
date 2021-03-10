@@ -13,7 +13,6 @@ El webmaster no tiene forma de saber que se ha producido un error.
 WordPress nos permite abordar este problema de la siguiente manera: si no puede conectarse a su base de datos, ejecutará el plugin drop-in `/wp-content/db-error.php` ([documentacion](https://developer.wordpress.org/reference/functions/dead_db/)) si existe. Smart WP db-error.php utiliza esa funcionalidad incorporada para servir una página 503 informando a los usuarios de la interrupción, al tiempo que envía un correo electrónico a los webmasters para alertarles del problema - pero sólo a intervalos especificados (por defecto: 5 minutos), para no saturar sus servidores de correo y sus buzones.
 
 
-![Smart WP db-error.php Error Messager](img/example.png)
 
 ## Instalacion
 
