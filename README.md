@@ -33,6 +33,8 @@ define( 'MAIL_TO', 'noc@itfinden.com' );
 define( 'MAIL_FROM', 'alerta@itfinden.com' );
 define( 'ALERT_INTERVAL', 300 );        // In seconds.
 define( 'SUPPRESS_CREDITS', false );
+define( 'TELEGRAM_TOKEN', 'TOKEN');
+define( 'TELEGRAM_CHAT','CHAT_ID');
 ```
 
 `MAIL_TO` and `MAIL_FROM` should be addresses chosen to cause the least trouble for spam filters (e-mail sent by PHP from a webserver is likely to need whitelisting). `ALERT_INTERVAL` is the number of seconds between attempts at mailing the webmaster.
