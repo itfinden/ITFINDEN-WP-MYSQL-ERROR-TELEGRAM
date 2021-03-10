@@ -1,8 +1,6 @@
-# Smart WP db-error.php
+# ITFINDEN WP db-error.php
 
-<p align="center">
-    <img src="img/mascot.png" alt="Smart WP db-error.php Mascot">
-</p>
+
 
 ## Overview
 
@@ -31,8 +29,8 @@ cd ..
 At this point it is vitally necessary that you edit the new `/wp-content/db-error.php` file so as to include installation-specific information. The defaults are
 
 ```php
-define( 'MAIL_TO', 'Firstname Lastname <example@example.com>' );
-define( 'MAIL_FROM', 'example@website.com' );
+define( 'MAIL_TO', 'noc@itfinden.com' );
+define( 'MAIL_FROM', 'alerta@itfinden.com' );
 define( 'ALERT_INTERVAL', 300 );        // In seconds.
 define( 'SUPPRESS_CREDITS', false );
 ```
