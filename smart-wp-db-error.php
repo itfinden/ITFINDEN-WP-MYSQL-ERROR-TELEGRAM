@@ -124,7 +124,7 @@ if ( defined( 'ABSPATH' ) ) {
 				<h1>Hemos encontrado una falla tecnica</h1>
 				<p>Disculpe las molestias.  Vuelva a comprobarlo más tarde.</p>
 				<?php if ( true === $touched || ( file_exists( $lock ) && time() - filectime( $lock ) <= ALERT_INTERVAL ) ) : ?>
-				<p>Administrador aletado.</p>
+				<p>Administrador alertado.</p>
 				<?php endif; ?>
 			</div>
 			<?php if ( true !== SUPPRESS_CREDITS ) : ?>
