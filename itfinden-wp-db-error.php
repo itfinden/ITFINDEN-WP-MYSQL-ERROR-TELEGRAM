@@ -95,7 +95,7 @@ if ( defined( 'ABSPATH' ) ) {
 	<title>Problemas Tecnicos</title>
 	<style>
 		body {
-			background-color: #152559;
+			background-color: <?php echo BACKGROUND_COLOR;?>;
 			font-family: "Courier New", Courier, monospace;
 		}
 
@@ -143,7 +143,7 @@ if ( defined( 'ABSPATH' ) ) {
 	<body>
 		<div id="wrapper">
 			<p class="aligncenter">
-    				<img src=<?php echo LOGO_EMPRESA;?> alt="centered image" />
+    				<img src=<?php echo LOGO;?> alt="centered image" />
 			</p>
 
 			<div id="error">
