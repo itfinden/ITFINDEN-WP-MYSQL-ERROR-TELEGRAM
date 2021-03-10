@@ -74,7 +74,7 @@ if ( defined( 'ABSPATH' ) ) {
 <html>
 <head>
 	<meta name="robots" content="noindex">
-	<title>Database Error</title>
+	<title>Problemas Tecnicos</title>
 	<style>
 		body {
 			background-color: #5b474c;
@@ -121,10 +121,10 @@ if ( defined( 'ABSPATH' ) ) {
 	<body>
 		<div id="wrapper">
 			<div id="error">
-				<h1>Database Error</h1>
-				<p>Sorry for the inconvenience.  Check back later.</p>
+				<h1>Hemos encontrado una falla tecnica</h1>
+				<p>Disculpe las molestias.  Vuelva a comprobarlo más tarde.</p>
 				<?php if ( true === $touched || ( file_exists( $lock ) && time() - filectime( $lock ) <= ALERT_INTERVAL ) ) : ?>
-				<p>Administrator alerted.</p>
+				<p>Administrador aletado.</p>
 				<?php endif; ?>
 			</div>
 			<?php if ( true !== SUPPRESS_CREDITS ) : ?>
