@@ -9,6 +9,10 @@ define( 'TELEGRAM_CHAT','CHAT_ID');
 define( 'TELEGRAM_CHAT','CHAT_ID');
 define( 'LOGO','http://images.itfinden.com/core_itfinden_logo_180x180px.png');
 define( 'BACKGROUND_COLOR','#152559');
+define( 'TEXT1','UPS');
+define( 'TEXT2','Estamos presentando problemas tecnicos, favor vuelva en 3 minutos');
+
+
 
 require __DIR__ . DIRECTORY_SEPARATOR . 'ITFINDEN-WP-MYSQL-ERROR-TELEGRAM' . DIRECTORY_SEPARATOR . 'itfinden-wp-db-error.php';
 
